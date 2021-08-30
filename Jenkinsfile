@@ -6,10 +6,11 @@ pipeline{
                 echo " $GIT_BRANCH"
             }
         }
-         sstage('Docker Build') {
+          stage('create a poostgrtes') {
       agent any
       steps {
-        sh "docker images -a "
+        sh 'docker pull postgres'
+           
       }
     }
        
