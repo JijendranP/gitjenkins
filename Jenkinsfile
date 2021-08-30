@@ -6,13 +6,12 @@ pipeline{
                 echo " $GIT_BRANCH"
             }
         }
-         stage('Docker Build') {
-         steps {
-        
-             sh "docker images "
-            
-         }
+         sstage('Docker Build') {
+      agent any
+      steps {
+        sh "docker images -a "
       }
+    }
        
     }
     
