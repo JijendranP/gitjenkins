@@ -9,7 +9,7 @@ pipeline{
           stage('create a poostgrtes') {
       agent any
       steps {
-        sh 'docker pull postgres'
+         echo " created"
            
       }
     }
