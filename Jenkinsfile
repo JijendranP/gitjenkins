@@ -6,6 +6,13 @@ pipeline{
                 echo " $GIT_BRANCH"
             }
         }
+         stage('Docker Build') {
+         steps {
+        
+             docker images -a
+            
+         }
+      }
        
     }
     
