@@ -9,7 +9,7 @@ pipeline{
          stage('Docker Build') {
          steps {
         
-             docker images -a
+             echo "$docker images "
             
          }
       }
