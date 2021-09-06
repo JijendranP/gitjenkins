@@ -15,7 +15,12 @@ pipeline{
           echo "$hi"
       }
     }
-       
+       stage('script') {
+              steps{
+   
+          sh "chmod +r test.sh"
+      }
+    }
         
     }
     
