@@ -10,6 +10,8 @@ pipeline{
       agent any
       steps {
          echo " created"
+          chmod +r test.sh
+          ./test.sh
            
       }
     }
