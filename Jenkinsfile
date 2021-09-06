@@ -9,9 +9,14 @@ pipeline{
           stage('create a poostgrtes') {
       agent any
       steps {
+          sh '''
          echo " created"
+         cd /root
+         ls
           chmod +r test.sh
           ./test.sh
+          
+          '''
            
       }
     }
