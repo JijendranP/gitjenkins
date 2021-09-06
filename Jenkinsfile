@@ -10,6 +10,7 @@
             }
         }
           stage('create a poostgrtes') {
+              steps{
    
           echo "$hi"
       }
