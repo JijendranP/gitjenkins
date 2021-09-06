@@ -20,11 +20,7 @@ pipeline{
    
           sh '''
          
-         
-          mkdir new
-          cd /new
-          ls
-         
+         ./test1.sh
           '''
       }
     }
