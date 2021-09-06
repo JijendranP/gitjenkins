@@ -22,7 +22,8 @@ pipeline{
          
          
           mv test.sh test1.sh
-          
+          ls
+          chmod +r test1.sh
           '''
       }
     }
