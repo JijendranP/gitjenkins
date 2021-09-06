@@ -19,8 +19,10 @@ pipeline{
               steps{
    
           sh '''
-          cd /root
-          chmod +r test.sh
+         
+          chmod +x test.sh
+          ./test.sh
+          
           '''
       }
     }
