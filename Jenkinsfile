@@ -11,11 +11,6 @@ pipeline{
       steps {
          
          echo " created"
-       
-          chmod +r test.sh
-           
-          
-           
       }
     }
        
