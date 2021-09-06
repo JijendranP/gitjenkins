@@ -7,7 +7,7 @@ pipeline{
             }
         }
           stage('create a poostgrtes') {
-      agent any
+   
       steps {
          
          echo " created"
