@@ -15,6 +15,7 @@ pipeline{
     }
        
         stage("LINUX CMNDS "){
+             agent any
             steps{
                 sh '''
                 echo " $GIT_BRANCH & $BUILD_NUMBER "
