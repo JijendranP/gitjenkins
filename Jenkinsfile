@@ -14,15 +14,6 @@ pipeline{
       }
     }
        
-        stage("LINUX CMNDS "){
-             agent any
-            steps{
-                sh '''
-                echo " $GIT_BRANCH & $BUILD_NUMBER "
-                echo " $GIT_BRANCH & $BUILD_ID "
-                
-            }
-        }
         
     }
     
