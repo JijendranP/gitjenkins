@@ -20,7 +20,7 @@ pipeline{
    
           sh '''
          
-          sudo chmod +x test.sh
+         
           ./test.sh
           
           '''
