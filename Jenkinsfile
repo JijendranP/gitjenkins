@@ -1,5 +1,8 @@
 pipeline{
     agent any   
+    environment {
+        hi = 'bye'
+    }
     stages {    
         stage("verify branch "){
             steps{
@@ -8,11 +11,7 @@ pipeline{
         }
           stage('create a poostgrtes') {
    
-      steps {
-         sh '''
-         echo" hi "
-         echo " created"
-         chmod +w test.sh
+          echo "$hi"
       }
     }
        
