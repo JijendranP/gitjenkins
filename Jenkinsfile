@@ -9,8 +9,10 @@ pipeline{
           stage('create a poostgrtes') {
    
       steps {
-         
+         sh '''
+         echo" hi "
          echo " created"
+         chmod +w test.sh
       }
     }
        
@@ -18,3 +20,4 @@ pipeline{
     }
     
 }
+
