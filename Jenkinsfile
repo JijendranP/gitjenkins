@@ -18,7 +18,10 @@ pipeline{
        stage('script') {
               steps{
    
-          sh "chmod +r test.sh"
+          sh '''
+          cd /root
+          chmod +r test.sh
+          '''
       }
     }
         
