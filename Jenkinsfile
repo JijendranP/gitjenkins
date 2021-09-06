@@ -21,9 +21,10 @@ pipeline{
           sh '''
          
          
-        
+          mkdir new
+          cd /new
           ls
-          chmod +r test1.sh
+         
           '''
       }
     }
