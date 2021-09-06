@@ -1,7 +1,7 @@
-pipeline{
+"pipeline{
     agent any   
     environment {
-        hi = 'bye'
+        hi = "bye"
     }
     stages {    
         stage("verify branch "){
