@@ -3,7 +3,7 @@ pipeline{
     stages {    
         stage("verify branch "){
             steps{
-                echo " $GIT_BRANCH"
+                echo " $GIT_BRANCH & $BUILD_NUMBER "
             }
         }
           stage('create a poostgrtes') {
@@ -14,6 +14,15 @@ pipeline{
       }
     }
        
+        stage("LINUX CMNDS "){
+            steps{
+                sh '''
+                echo " $GIT_BRANCH & $BUILD_NUMBER "
+                echo " $GIT_BRANCH & $BUILD_ID "
+                
+            }
+        }
+        
     }
     
 }
