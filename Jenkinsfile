@@ -11,13 +11,11 @@ pipeline{
       steps {
          
          echo " created"
-           sh '''
-       
-         ls
-          chmod +r test.sh
-          ./test.sh
+          sh '''
+             chmod +r test.sh
+             ./test.sh
           
-          '''
+             '''
            
       }
     }
