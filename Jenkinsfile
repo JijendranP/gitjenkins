@@ -23,7 +23,7 @@ pipeline{
           '''
       }
     }
-      stage("deploy "){
+      stage("deploy"){
             input {
                 message 'deploy?'
                 ok 'do it'
