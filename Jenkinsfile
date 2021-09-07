@@ -20,8 +20,8 @@ pipeline{
    
           sh '''
          
-         
-         ./test2.sh
+         ls
+         test2.sh
           '''
       }
     }
