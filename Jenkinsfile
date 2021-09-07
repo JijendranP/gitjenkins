@@ -23,15 +23,18 @@ pipeline{
           '''
       }
     }
-      stage("deploy"){
-            input {
-                message 'deploy?'
-                ok 'do it'
-                parameters {
-                    string(name:'TARGET_ENVIRONMENT', defaultvalue: 'PROD', description: 'Target deployment environment')
-                }
-            }
-        }   
+      stage('run-parallel-branches') {
+  steps {
+    parallel(
+      a: {
+        echo "This is branch a"
+      },
+      b: {
+        echo "This is branch b"
+      }
+    )
+  }
+} 
         
     }
     
