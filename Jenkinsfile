@@ -23,18 +23,25 @@ pipeline{
           '''
       }
     }
-      stage('run-parallel-branches') {
-  steps {
-    parallel(
-      a: {
-        echo "This is branch a"
-      },
-      b: {
-        echo "This is branch b"
-      }
-    )
-  }
-} 
+       stage('para') {
+           parallel {
+               stage('apple') {
+                   steps {
+                       echo ("apple")
+                   }
+               }
+               stage('banana') {
+                   steps {
+                      echo ("banana") 
+                   }
+               }
+               stage('peach') {
+                   steps {
+                     echo ("peach")   
+                   }
+               }
+           }
+       }
         
     }
     
