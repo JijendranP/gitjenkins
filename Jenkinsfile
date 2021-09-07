@@ -19,12 +19,19 @@ pipeline{
               steps{
    
           sh '''
-         
-         ls
-         
+          ls
           '''
       }
     }
+      stage("deploy "){
+            input {
+                message 'deploy?'
+                ok 'do it'
+                parameters {
+                    string(name:'TARGET_ENVIRONMENT', defaultvalue: 'PROD', description: 'Target deployment environment')
+                }
+            }
+        }   
         
     }
     
